@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pods
+spec:
+  containers:
+    - name: pods
+      image: mohamedsaafan/posts
