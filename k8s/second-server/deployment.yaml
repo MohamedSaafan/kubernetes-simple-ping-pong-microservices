@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: posts-deployment
+  name: second-server-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: posts
+      app: second-server
   template:
     metadata:
       labels:
-        app: posts
+        app: second-server
     spec:
       containers:
-        - name: posts-pod
-          image: mohamedsaafan/simple-node
+        - name: second-server-pod
+          image: mohamedsaafan/second-server
